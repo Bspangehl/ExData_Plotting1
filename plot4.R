@@ -14,6 +14,8 @@ df$DateTime<-strptime(var, "%d/%m/%Y %H:%M:%S")
 ## Prepare plot 4
 png("plot4.png", width=480, height=480)
 
+colours=c("black","red","blue")
+
 par(mfrow=c(2,2))
 with(df,{plot(DateTime,Global_active_power,type="l",xlab="",ylab="Global Active Power")
          plot(DateTime,Voltage,type="l",xlab="datetime",ylab="Voltage")
